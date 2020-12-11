@@ -4,7 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#87F1FF"
     tools:context=".Register">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="152dp"
+        android:layout_height="97dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="134dp"
+        android:layout_marginTop="21dp"
+        app:srcCompat="@drawable/register"
+        android:foregroundGravity="center"/>
 
     <TextView
         android:id="@+id/textView"
@@ -12,9 +25,14 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="42dp"
-        android:text="Email" />
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="135dp"
+        android:text="Email"
+        android:fontFamily="cursive"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#1E35B4"
+        android:textSize="30sp"
+        android:typeface="normal" />
 
     <TextView
         android:id="@+id/textView2"
@@ -22,22 +40,28 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="157dp"
-        android:text="Password" />
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="269dp"
+        android:fontFamily="cursive"
+        android:text="Password"
+        android:inputType="numberPassword"
+        android:textColor="#1E35B4"
+        android:textSize="30sp"
+        android:typeface="normal" />
 
     <EditText
         android:id="@+id/editemail"
-        android:layout_width="wrap_content"
+        android:layout_width="215dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="91dp"
+        android:layout_marginTop="143dp"
+        android:layout_marginEnd="66dp"
+        android:background="#F5AEFF"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name" />
+        android:textColor="#8B09CC" />
 
     <EditText
         android:id="@+id/editpass"
@@ -45,20 +69,31 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="140dp"
-        android:layout_marginEnd="82dp"
-        android:ems="10"
+        android:layout_marginTop="275dp"
+        android:layout_marginEnd="67dp"
         android:inputType="textPersonName"
-        android:text="Name" />
+        android:background="#F5AEFF"
+        android:ems="10"
+        android:textColor="#8B09CC" />
 
     <Button
         android:id="@+id/btnsubmit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="295dp"
-        android:text="Submit" />
+        android:layout_marginTop="439dp"
+        android:layout_marginEnd="149dp"
+        android:background="#FFEF7E"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Register"
+        android:textAlignment="center"
+        android:textColor="#FF0000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="monospace" />
 
     <TextView
         android:id="@+id/textView3"
@@ -66,20 +101,29 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="95dp"
-        android:text="TextView" />
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="204dp"
+        android:fontFamily="cursive"
+        android:text="Name"
+        android:textColor="#1E35B4"
+        android:textSize="30sp"
+        android:typeface="normal" />
 
     <EditText
         android:id="@+id/editname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="82dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="212dp"
+        android:layout_marginEnd="67dp"
+        android:background="#F5AEFF"
+        android:breakStrategy="high_quality"
         android:ems="10"
+        android:fontFamily="monospace"
         android:inputType="textPersonName"
-        android:text="Name" />
+        android:textColor="#8B09CC"
+        android:typeface="serif" />
 
     <TextView
         android:id="@+id/login"
@@ -87,7 +131,15 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="260dp"
-        android:layout_marginEnd="93dp"
-        android:text="You have account" />
+        android:layout_marginTop="393dp"
+        android:layout_marginEnd="15dp"
+        android:clickable="true"
+        android:contextClickable="true"
+        android:cursorVisible="true"
+        android:fontFamily="serif"
+        android:text="You have account"
+        android:textColor="#0F0873"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="normal" />
 </RelativeLayout>
