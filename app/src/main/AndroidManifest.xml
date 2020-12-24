@@ -9,11 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Add_note"/>
+        <activity android:name=".edite"></activity>
+        <activity android:name=".detailnote" />
+        <activity android:name=".Add_note" />
         <activity android:name=".Note" />
         <activity android:name=".MainActivity" />
         <activity android:name=".login" />
-
         <activity android:name=".Register">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
