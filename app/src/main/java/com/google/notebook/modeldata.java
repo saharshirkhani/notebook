@@ -14,9 +14,7 @@ public class modeldata {
     }
     public modeldata(){}
 
-    public String getText() {
-        return text;
-    }
+    public String getText() { return text; }
 
     public String getSubject() {
         return subject;

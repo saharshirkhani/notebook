@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#87F1FF"
-    tools:context=".Register">
+    android:scrollbars="none">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
     <ImageView
         android:id="@+id/imageView"
@@ -43,8 +46,8 @@
         android:layout_marginStart="11dp"
         android:layout_marginTop="269dp"
         android:fontFamily="cursive"
+        android:inputType="text"
         android:text="Password"
-        android:inputType="numberPassword"
         android:textColor="#1E35B4"
         android:textSize="30sp"
         android:typeface="normal" />
@@ -71,9 +74,9 @@
         android:layout_alignParentEnd="true"
         android:layout_marginTop="275dp"
         android:layout_marginEnd="67dp"
-        android:inputType="textPersonName"
         android:background="#F5AEFF"
         android:ems="10"
+        android:inputType="textVisiblePassword|number|textPassword|numberPassword"
         android:textColor="#8B09CC" />
 
     <Button
@@ -131,8 +134,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="393dp"
-        android:layout_marginEnd="15dp"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="344dp"
+        android:layout_marginEnd="21dp"
         android:clickable="true"
         android:contextClickable="true"
         android:cursorVisible="true"
@@ -142,4 +146,5 @@
         android:textSize="18sp"
         android:textStyle="bold"
         android:typeface="normal" />
-</RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
